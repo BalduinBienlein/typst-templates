@@ -1,6 +1,3 @@
-/* Blocks */
-// Pls add or remove elements in this array first,
-// if you want to add or remove the class of blocks
 #let classes = ("Definition", "Lemma", "Theorem", "Corollary")
 #let h1_marker = counter("h1")
 #let h2_marker = counter("h2")
@@ -35,11 +32,11 @@
 
 // You can change the class name or color here
 #let definition(body) = note_block(
-  body, class: "Definition", fill: rgb("#EDF1D6"), stroke: rgb("#1a1a1a")
+  body, class: "Definition", fill: rgb("#FF0000"), stroke: rgb("#1a1a1a")
 )
 
 #let theorem(body) = note_block(
-  body, class: "Theorem", fill: rgb("#FEF2F4"), stroke: rgb("#EE6983")
+  body, class: "Theorem", fill: rgb("#00FF00"), stroke: rgb("#EE6983")
 )
 
 #let lemma(body) = note_block(
